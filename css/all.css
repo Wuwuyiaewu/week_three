@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+.first-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 88px;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #aa0601;
+}
+
+.first-header .logo_wrap {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 48px;
+}
+
+.first-header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.first-header .menu li {
+  list-style: none;
+}
+
+.first-header .menu li + li {
+  margin-left: 64px;
+}
+
+.first-header .menu li:hover {
+  cursor: pointer;
+}
+
+.section-1 {
+  padding-top: 108px;
+  height: calc(100vh - 108px);
+  background-image: url("../images/68@2x.png");
+  background-size: cover;
+}
+
+.section-1 .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 242px;
+}
+
+.section-1 .container .brand {
+  color: #650300;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.section-1 .container .title {
+  font-size: 64px;
+  line-height: 96px;
+}
+
+.section-2 {
+  background: #aa06010d;
+  padding-bottom: 80px;
+}
+
+.section-2 .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #650300;
+}
+
+.section-2 .container .title {
+  padding-top: 64px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.section-2 .container .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-2 .container .d-flex li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 37px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-2 .container .d-flex li + li {
+  margin-left: 24px;
+}
+
+.section-2 .container .d-flex li img {
+  padding-top: 60px;
+}
+
+.section-2 .container .d-flex li h4 {
+  font-size: 24px;
+  padding-top: 40px;
+}
+
+.section-2 .container .d-flex li h6 {
+  font-size: 16px;
+}
+
+.section-3 {
+  padding-bottom: 80px;
+}
+
+.section-3 .container {
+  margin: 0 auto;
+  max-width: 1200px;
+  color: #650300;
+}
+
+.section-3 .container .title {
+  padding-top: 64px;
+  padding-bottom: 60px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.section-3 .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #aa0601;
+}
+
+.section-3 .container .row h4 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.section-3 .container .row + .row {
+  padding-top: 24px;
+}
+
+.section-3 .container .row:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-3 .container .row:nth-child(3) img {
+  padding-left: 24px;
+}
+
+.section-3 .container .row img + img {
+  padding-left: 24px;
+}
+
+.section-4 {
+  background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
+  background-size: cover;
+}
+
+.section-4 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-4 .title {
+  padding-top: 64px;
+  padding-bottom: 60px;
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-4 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-4 .row .col-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 4px;
+}
+
+.section-4 .row .col-r {
+  margin-left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-4 .pic-0 {
+  margin-right: 79px;
+}
+
+.section-4 .pic-0-text {
+  position: absolute;
+  top: 27px;
+  left: 503px;
+  padding-left: 32px;
+  width: 315px;
+  color: #aa0601;
+  background: #fff;
+  font-size: 72px;
+}
+
+.section-4 .pic-1,
+.section-4 .pic-2 {
+  margin-top: 60px;
+  position: relative;
+  background-image: url("../images/14.png");
+  background-size: cover;
+  width: 585px;
+  height: 592px;
+  z-index: 0;
+}
+
+.section-4 .pic-1::before,
+.section-4 .pic-2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -5;
+}
+
+.section-4 .pic-1::after,
+.section-4 .pic-2::after {
+  position: absolute;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  content: "Double A+";
+  font-size: 72px;
+  line-height: 1.5;
+  color: #aa0601;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.section-4 .pic-2 {
+  background-image: url("../images/39.png");
+  margin-left: 30px;
+}
+
+.section-4 .I_col-l {
+  max-width: 573px;
+}
+
+.section-4 .I_col-r {
+  max-width: 958px;
+}
+
+.section-4 .II_col-l {
+  max-width: 132px;
+}
+
+.section-4 .II_col-r {
+  max-width: 818px;
+}
+
+.section-4 .psr {
+  position: relative;
+}
+
+.section-4 .d-1200p {
+  max-width: 1200px;
+}
+
+.section-4 .d-100 {
+  width: 100%;
+}
+
+.section-4 .dfw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-4 .jce {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section-4 .mt-4 {
+  margin-top: 4px;
+}
+
+.section-4 .mb-4 {
+  margin-bottom: 4px;
+}
+/*# sourceMappingURL=all.css.map */
