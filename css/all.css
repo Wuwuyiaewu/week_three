@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +23,10 @@ h4,
 h5,
 h6 {
   line-height: 1.5;
+}
+
+li {
+  list-style: none;
 }
 
 .first-header {
@@ -49,10 +54,6 @@ h6 {
   display: flex;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.first-header .menu li {
-  list-style: none;
 }
 
 .first-header .menu li + li {
@@ -113,10 +114,10 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 60px;
 }
 
 .section-2 .container .d-flex li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,10 +139,6 @@ h6 {
 
 .section-2 .container .d-flex li + li {
   margin-left: 24px;
-}
-
-.section-2 .container .d-flex li img {
-  padding-top: 60px;
 }
 
 .section-2 .container .d-flex li h4 {
@@ -210,6 +207,9 @@ h6 {
 .section-4 {
   background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -306px;
+  padding-bottom: 80px;
 }
 
 .section-4 .container {
@@ -259,7 +259,7 @@ h6 {
 .section-4 .pic-0-text {
   position: absolute;
   top: 27px;
-  left: 503px;
+  right: 0px;
   padding-left: 32px;
   width: 315px;
   color: #aa0601;
@@ -269,6 +269,19 @@ h6 {
 
 .section-4 .pic-1,
 .section-4 .pic-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #aa0601;
+  font-size: 72px;
+  line-height: 1.5;
+  font-weight: bold;
   margin-top: 60px;
   position: relative;
   background-image: url("../images/14.png");
@@ -290,25 +303,43 @@ h6 {
   z-index: -5;
 }
 
-.section-4 .pic-1::after,
-.section-4 .pic-2::after {
-  position: absolute;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  content: "Double A+";
-  font-size: 72px;
-  line-height: 1.5;
-  color: #aa0601;
-  z-index: 10;
-  font-weight: bold;
-}
-
 .section-4 .pic-2 {
   background-image: url("../images/39.png");
   margin-left: 30px;
+}
+
+.section-4 ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-4 ul li + li {
+  margin-left: 24px;
+}
+
+.section-4 .content_wrap {
+  border: 1px solid #dee2e6;
+  border-top: none;
+  padding: 16px;
+}
+
+.section-4 .content_wrap h4 {
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 16px;
+}
+
+.section-4 .content_wrap h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  padding-bottom: 16px;
+}
+
+.section-4 .content_wrap h6:nth-child(3) {
+  color: #707070;
+  padding-bottom: 0;
 }
 
 .section-4 .I_col-l {
@@ -350,11 +381,113 @@ h6 {
           justify-content: flex-end;
 }
 
+.section-4 .jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-4 .n-144 {
+  -webkit-transform: translateY(144px);
+          transform: translateY(144px);
+}
+
+.section-4 .mt-100 {
+  margin-top: 100px;
+}
+
 .section-4 .mt-4 {
   margin-top: 4px;
 }
 
 .section-4 .mb-4 {
   margin-bottom: 4px;
+}
+
+.section-5 {
+  background: #aa06010d;
+}
+
+.section-5 .container {
+  max-width: 792px;
+  margin: 0 auto;
+}
+
+.section-5 .title {
+  padding-top: 64px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.section-5 .sub-title {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "PingFang TC";
+}
+
+.section-5 input {
+  width: 100%;
+  height: 50px;
+  background: inherit;
+  border: 1px solid #000;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.section-5 .checkbox {
+  display: none;
+}
+
+.section-5 .checkbox + span {
+  display: inline-block;
+  background-color: #aaa;
+  padding: 3px 6px;
+  border: 1px solid gray;
+  color: #444;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* 防止文字被滑鼠選取反白 */
+}
+
+.section-5 .checkbox:checked + span {
+  color: yellow;
+  background-color: #444;
+}
+
+.section-5 textarea {
+  width: 100%;
+  background: inherit;
+  border: 1px solid #000;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px 14px;
+  resize: none;
+}
+
+.section-5 label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.section-5 .mb-4 {
+  margin-bottom: 4px;
+}
+
+.section-5 .mb-16 {
+  margin-bottom: 16px;
+}
+
+.section-5 .mb-20 {
+  margin-bottom: 20px;
+}
+
+.section-5 .mb-24 {
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=all.css.map */
