@@ -437,16 +437,25 @@ li {
   margin-bottom: 16px;
 }
 
-.section-5 .checkbox {
+.section-5 .check_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section-5 .checkbox,
+.section-5 .checked {
   display: none;
 }
 
-.section-5 .checkbox + span {
+.section-5 .checkbox ~ .defalut {
   display: inline-block;
-  background-color: #aaa;
-  padding: 3px 6px;
-  border: 1px solid gray;
-  color: #444;
+  background-color: inherit;
+  padding: 12px;
+  border: 1px solid #000;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -454,9 +463,21 @@ li {
   /* 防止文字被滑鼠選取反白 */
 }
 
-.section-5 .checkbox:checked + span {
-  color: yellow;
-  background-color: #444;
+.section-5 .checkbox:checked + .defalut {
+  display: none;
+}
+
+.section-5 .checkbox:checked ~ .checked {
+  display: inline-block;
+  background-color: inherit;
+  font-size: 16px;
+  padding: 0 7px;
+  border: 1px solid #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* 防止文字被滑鼠選取反白 */
 }
 
 .section-5 textarea {
