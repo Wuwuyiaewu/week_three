@@ -300,6 +300,7 @@ li {
   }
 }
 .section-5 {
+  padding-bottom: 92px;
   background: #aa06010d;
   .container {
     max-width: 792px;
@@ -326,9 +327,30 @@ li {
     padding: 16px;
     margin-bottom: 16px;
   }
-  .check_wrap {
-    display: flex;
-    justify-content: flex-start;
+  .userSend {
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 180px;
+    height: 54px;
+    background: #aa0601;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    border: none;
+  }
+  .label_wrap {
+    display: inline-block;
+    .check_wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: bold;
+      // 如果文字大小小於14px，在checked狀態會跳動，不知道為什麼
+      // 例如
+      font-size: 14px;
+    }
   }
   .checkbox,
   .checked {
@@ -337,23 +359,26 @@ li {
   .checkbox ~ .defalut {
     display: inline-block;
     background-color: inherit;
-    padding: 12px;
-    border: 1px solid #000;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
     user-select: none; /* 防止文字被滑鼠選取反白 */
   }
 
-  .checkbox:checked + .defalut {
+  .checkbox:checked ~ .defalut {
     display: none;
   }
   .checkbox:checked ~ .checked {
     display: inline-block;
     background-color: inherit;
-    font-size: 16px;
-    padding: 0 7px;
-    border: 1px solid #000;
-    user-select: none; /* 防止文字被滑鼠選取反白 */
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    border: 2px solid #000;
+    user-select: none;
   }
-
   textarea {
     width: 100%;
     background: inherit;
@@ -363,22 +388,59 @@ li {
     line-height: 1.5;
     padding: 16px 14px;
     resize: none;
+    margin-bottom: 16px;
   }
   label {
     display: inline-block;
     margin-bottom: 4px;
   }
   // utility
-  .mb-4 {
-    margin-bottom: 4px;
-  }
-  .mb-16 {
-    margin-bottom: 16px;
-  }
   .mb-20 {
     margin-bottom: 20px;
   }
   .mb-24 {
     margin-bottom: 24px;
+  }
+
+  .mt-42 {
+    margin-top: 42px;
+  }
+}
+footer {
+  background: #aa0601;
+  .container {
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 27px;
+    max-width: 1200px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  .link {
+    li {
+      font-size: 16px;
+      height: 48px;
+      line-height: 48px;
+    }
+    li + li {
+      margin-left: 48px;
+    }
+  }
+  .social-link {
+    li + li {
+      margin-left: 32px;
+      line-height: 48px;
+      height: 48px;
+    }
+  }
+  .contact {
   }
 }
