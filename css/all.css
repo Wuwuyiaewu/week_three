@@ -555,6 +555,7 @@ footer .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 footer ul {
@@ -581,5 +582,38 @@ footer .social-link li + li {
   margin-left: 32px;
   line-height: 48px;
   height: 48px;
+}
+
+footer .contact {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .contact li {
+  width: 100%;
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+
+footer .contact li img {
+  display: inline-block;
+}
+
+footer .contact li .img_0 {
+  width: 36px;
+  height: 36px;
+  margin-right: 23px;
+}
+
+footer .contact li .img_1 {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+footer .mb-24 {
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=all.css.map */

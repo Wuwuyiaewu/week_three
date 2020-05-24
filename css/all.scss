@@ -418,6 +418,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
   ul {
     display: flex;
@@ -442,5 +443,30 @@ footer {
     }
   }
   .contact {
+    width: 100%;
+    flex-wrap: wrap;
+    li {
+      width: 100%;
+      font-size: 36px;
+      line-height: 54px;
+      margin-bottom: 16px;
+      img{
+        display: inline-block;
+      }
+      .img_0{
+        width: 36px;
+        height: 36px;
+        margin-right: 23px;
+      }
+      .img_1{
+        width: 48px;
+        height: 48px;
+        margin-right: 12px;
+      }
+    }
+  }
+  // utility
+  .mb-24{
+    margin-bottom: 24px;
   }
 }
