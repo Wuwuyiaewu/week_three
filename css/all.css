@@ -267,6 +267,17 @@ li {
   font-size: 72px;
 }
 
+.section-4 .pic-0-icon {
+  position: absolute;
+  z-index: 44;
+  top: 61px;
+  right: 19px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ic_arrow_forward_24px.svg");
+  background-size: contain;
+}
+
 .section-4 .pic-1,
 .section-4 .pic-2 {
   display: -webkit-box;
@@ -439,6 +450,7 @@ li {
 }
 
 .section-5 .userSend {
+  cursor: pointer;
   display: block;
   margin: 0 auto;
   margin-top: 42px;
@@ -555,7 +567,6 @@ footer .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 32px;
 }
 
 footer ul {
@@ -569,6 +580,7 @@ footer ul {
 }
 
 footer .link li {
+  cursor: pointer;
   font-size: 16px;
   height: 48px;
   line-height: 48px;
@@ -576,6 +588,10 @@ footer .link li {
 
 footer .link li + li {
   margin-left: 48px;
+}
+
+footer .social-link li {
+  cursor: pointer;
 }
 
 footer .social-link li + li {
@@ -613,7 +629,36 @@ footer .contact li .img_1 {
   margin-right: 12px;
 }
 
+footer .copyright li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright li span {
+  margin-left: 38px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .service li {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer .service li + li {
+  margin-left: 62px;
+}
+
 footer .mb-24 {
   margin-bottom: 24px;
+}
+
+footer .mb-32 {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=all.css.map */

@@ -194,6 +194,16 @@ li {
     background: #fff;
     font-size: 72px;
   }
+  .pic-0-icon{
+    position: absolute;
+    z-index: 44;
+    top: 61px;
+    right: 19px;
+    width: 48px;
+    height: 48px;
+    background-image: url('../images/ic_arrow_forward_24px.svg');
+    background-size: contain;
+  }
   .pic-1,
   .pic-2 {
     display: flex;
@@ -328,6 +338,7 @@ li {
     margin-bottom: 16px;
   }
   .userSend {
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     margin-top: 42px;
@@ -418,7 +429,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
   }
   ul {
     display: flex;
@@ -427,6 +437,7 @@ footer {
   }
   .link {
     li {
+      cursor: pointer;
       font-size: 16px;
       height: 48px;
       line-height: 48px;
@@ -436,6 +447,9 @@ footer {
     }
   }
   .social-link {
+    li{
+      cursor: pointer;
+    }
     li + li {
       margin-left: 32px;
       line-height: 48px;
@@ -465,8 +479,32 @@ footer {
       }
     }
   }
-  // utility
-  .mb-24{
-    margin-bottom: 24px;
+  .copyright{
+    li{
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 38px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
+  .service{
+    li{
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    li + li{
+      margin-left: 62px;
+    }
+  }
+  // utility
+      .mb-24{
+        margin-bottom: 24px;
+      }
+      .mb-32{
+        margin-bottom: 32px;
+      }
 }
