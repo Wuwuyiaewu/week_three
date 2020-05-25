@@ -48,6 +48,10 @@ li {
   height: 48px;
 }
 
+.first-header .logo_wrap .logo {
+  cursor: pointer;
+}
+
 .first-header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
