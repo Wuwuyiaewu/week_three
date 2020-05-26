@@ -26,6 +26,7 @@ li {
 .first-header {
   display: flex;
   padding: 0 88px;
+  align-items: center;
   color: #fff;
   justify-content: space-between;
   background-color: #aa0601;
@@ -52,6 +53,19 @@ li {
     }
   }
 }
+@media (max-width: 992px) {
+  .first-header {
+    padding-left: 48px;
+    padding-right: 28px;
+    .menu {
+      li {
+        & + li {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
 .section-1 {
   padding-top: 108px;
   height: calc(100vh - 108px);
@@ -71,6 +85,21 @@ li {
     .title {
       font-size: 64px;
       line-height: 96px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section-1 {
+    .container {
+      padding-right: 28px;
+      .brand {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .title {
+        font-size: 48px;
+        line-height: 72px;
+      }
     }
   }
 }
@@ -111,12 +140,45 @@ li {
     }
   }
 }
+@media (max-width: 992px) {
+  .section-2 {
+    background: #aa06010d;
+    padding-bottom: 80px;
+    .container {
+      color: #650300;
+      .title {
+        padding-top: 40px;
+        font-size: 32px;
+        text-align: center;
+      }
+      .d-flex {
+        padding-top: 60px;
+        flex-wrap: wrap;
+        li {
+          flex: none;
+          width: calc(50% - 24px);
+          padding: 0 48px;
+          & + li {
+            margin-left: 24px;
+          }
+          h4 {
+            font-size: 20px;
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
 .section-3 {
   padding-bottom: 80px;
   .container {
     margin: 0 auto;
     max-width: 1200px;
     color: #650300;
+    @media (max-width: 1200px) {
+      max-width: 90% !important;
+    }
     .title {
       padding-top: 64px;
       padding-bottom: 60px;
@@ -142,10 +204,74 @@ li {
           padding-left: 24px;
         }
       }
+      .img-60 {
+        width: 60%;
+      }
       img {
         & + img {
           padding-left: 24px;
         }
+      }
+    }
+    .d-flex {
+      display: flex;
+      img{
+        padding-left: 24px;
+      }
+    }
+    .or-3 {
+      order: 3;
+    }
+    .u-center {
+      width: 100%;
+      justify-content: flex-start;
+      text-align: center;
+    }
+  }
+  @media (max-width: 992px) {
+    padding-bottom: 40px;
+    .container {
+      .title {
+        padding-top: 40px;
+        padding-bottom: 32px;
+        font-size: 32px;
+      }
+      .row {
+        h4 {
+          font-size: 28px;
+          text-transform: uppercase;
+        }
+        & + .row {
+          padding-top: 8px;
+        }
+        //   為什麼 nth 是 3 不是 2 呢 ?
+        &:nth-child(3) {
+          flex-direction: row;
+          justify-content: flex-start;
+          & img {
+            padding-left: 0;
+          }
+        }
+        .img-60 {
+          width: 60%;
+        }
+        img {
+          & + img {
+            padding-left: 24px;
+          }
+        }
+      }
+      // utility
+      .d-flex {
+        display: flex;
+      }
+      .or-3 {
+        order: 3;
+      }
+      .u-center {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
       }
     }
   }
@@ -195,14 +321,14 @@ li {
     background: #fff;
     font-size: 72px;
   }
-  .pic-0-icon{
+  .pic-0-icon {
     position: absolute;
     z-index: 44;
     top: 61px;
     right: 19px;
     width: 48px;
     height: 48px;
-    background-image: url('../images/ic_arrow_forward_24px.svg');
+    background-image: url("../images/ic_arrow_forward_24px.svg");
     background-size: contain;
   }
   .pic-1,
@@ -448,7 +574,7 @@ footer {
     }
   }
   .social-link {
-    li{
+    li {
       cursor: pointer;
     }
     li + li {
@@ -465,47 +591,47 @@ footer {
       font-size: 36px;
       line-height: 54px;
       margin-bottom: 16px;
-      img{
+      img {
         display: inline-block;
       }
-      .img_0{
+      .img_0 {
         width: 36px;
         height: 36px;
         margin-right: 23px;
       }
-      .img_1{
+      .img_1 {
         width: 48px;
         height: 48px;
         margin-right: 12px;
       }
     }
   }
-  .copyright{
-    li{
+  .copyright {
+    li {
       display: flex;
       align-items: center;
-      span{
+      span {
         margin-left: 38px;
         font-size: 16px;
         line-height: 24px;
       }
     }
   }
-  .service{
-    li{
+  .service {
+    li {
       cursor: pointer;
       font-size: 14px;
       line-height: 21px;
     }
-    li + li{
+    li + li {
       margin-left: 62px;
     }
   }
   // utility
-      .mb-24{
-        margin-bottom: 24px;
-      }
-      .mb-32{
-        margin-bottom: 32px;
-      }
+  .mb-24 {
+    margin-bottom: 24px;
+  }
+  .mb-32 {
+    margin-bottom: 32px;
+  }
 }
