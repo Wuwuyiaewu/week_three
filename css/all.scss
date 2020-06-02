@@ -154,6 +154,9 @@ li {
       .d-flex {
         padding-top: 60px;
         flex-wrap: wrap;
+        @media (max-width: 768px) {
+          padding-top: 32px;
+        }
         li {
           flex: none;
           width: calc(50% - 24px);
@@ -164,6 +167,9 @@ li {
           h4 {
             font-size: 20px;
             padding-top: 30px;
+            @media (max-width: 768px) {
+              padding-top: 16px;
+            }
           }
         }
       }
@@ -215,7 +221,7 @@ li {
     }
     .d-flex {
       display: flex;
-      img{
+      img {
         padding-left: 24px;
       }
     }
@@ -285,6 +291,12 @@ li {
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (max-width: 768px) {
+      max-width: 672px;
+      .block-1 {
+        height: 367px;
+      }
+    }
   }
   .title {
     padding-top: 64px;
@@ -300,11 +312,17 @@ li {
       display: flex;
       flex-wrap: wrap;
       margin-right: 4px;
+      @media screen {
+        margin-right: 3px;
+      }
     }
     .col-r {
       margin-left: 4px;
       display: flex;
       flex-wrap: wrap;
+      @media screen {
+        margin-left: 0px;
+      }
     }
   }
   //   component
@@ -431,9 +449,21 @@ li {
   }
   .mt-4 {
     margin-top: 4px;
+    @media (max-width: 768px) {
+      margin-top: 0px;
+    }
   }
   .mb-4 {
     margin-bottom: 4px;
+    @media (max-width: 768px) {
+      margin-bottom: 3px;
+    }
+  }
+  .h-50 {
+    height: 50%;
+    @media (max-width: 768px) {
+      height: 50%;
+    }
   }
 }
 .section-5 {
