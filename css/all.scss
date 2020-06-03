@@ -286,13 +286,17 @@ li {
   background-image: url("../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -306px;
+  background-position: center -685px;
   padding-bottom: 80px;
+  @media (max-width: 768px) {
+    padding-bottom: 40px;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
     @media (max-width: 768px) {
       max-width: 672px;
+      margin: 0 50px;
       .block-1 {
         height: 367px;
       }
@@ -320,7 +324,7 @@ li {
       margin-left: 4px;
       display: flex;
       flex-wrap: wrap;
-      @media screen {
+      @media (max-width: 768px) {
         margin-left: 0px;
       }
     }
@@ -328,6 +332,11 @@ li {
   //   component
   .pic-0 {
     margin-right: 79px;
+    @media (max-width: 768px) {
+      margin-right: 48px;
+      width: 147px;
+      height: 77px;
+    }
   }
   .pic-0-text {
     position: absolute;
@@ -338,6 +347,13 @@ li {
     color: #aa0601;
     background: #fff;
     font-size: 72px;
+    @media (max-width: 768px) {
+      width: 178px;
+      top: 8px;
+      font-size: 36px;
+      padding-left: 27px;
+      line-height: 59px;
+    }
   }
   .pic-0-icon {
     position: absolute;
@@ -346,8 +362,15 @@ li {
     right: 19px;
     width: 48px;
     height: 48px;
+    font-weight: bold;
     background-image: url("../images/ic_arrow_forward_24px.svg");
     background-size: contain;
+    @media (max-width: 768px) {
+      width: 27px;
+      height: 27px;
+      right: 10px;
+      top: 25px;
+    }
   }
   .pic-1,
   .pic-2 {
@@ -365,6 +388,12 @@ li {
     width: 585px;
     height: 592px;
     z-index: 0;
+    @media (max-width: 768px) {
+      width: 332px;
+      height: 280px;
+      font-size: 32px;
+      line-height: 43px;
+    }
     &::before {
       position: absolute;
       top: 0;
@@ -386,12 +415,29 @@ li {
       & + li {
         margin-left: 24px;
       }
+      @media (max-width: 768px) {
+        flex-basis: 47%;
+        margin: 0;
+        & {
+          margin-bottom: 24px;
+        }
+        & img {
+          width: 100%;
+        }
+        & + li {
+          margin-left: 0;
+        }
+        &:nth-child(odd) {
+          margin-right: 24px;
+        }
+      }
     }
   }
   .content_wrap {
     border: 1px solid #dee2e6;
     border-top: none;
     padding: 16px;
+    background: #fff;
     h4 {
       font-size: 16px;
       line-height: 21px;
@@ -446,6 +492,19 @@ li {
   }
   .mt-100 {
     margin-top: 100px;
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+  .mt-32-md {
+    @media (max-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+  .n-pad-md {
+    @media (max-width: 768px) {
+      padding: 0;
+    }
   }
   .mt-4 {
     margin-top: 4px;
@@ -459,10 +518,19 @@ li {
       margin-bottom: 3px;
     }
   }
-  .h-50 {
-    height: 50%;
+  @media (max-width: 768px) {
+    .n-bm-4-md {
+      margin-bottom: 0;
+    }
+  }
+  .h-top {
     @media (max-width: 768px) {
-      height: 50%;
+      height: 198px;
+    }
+  }
+  .h-down {
+    @media (max-width: 768px) {
+      height: 166px;
     }
   }
 }
@@ -472,6 +540,9 @@ li {
   .container {
     max-width: 792px;
     margin: 0 auto;
+    @media (max-width: 768px) {
+      max-width: 498px;
+    }
   }
   .title {
     padding-top: 64px;
@@ -518,6 +589,9 @@ li {
       // 如果文字大小小於14px，在checked狀態會跳動，不知道為什麼
       // 例如
       font-size: 14px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   .checkbox,
@@ -581,6 +655,9 @@ footer {
     padding-top: 36px;
     padding-bottom: 27px;
     max-width: 1200px;
+    @media (max-width: 768px) {
+      max-width: 672px;
+    }
   }
   .row {
     width: 100%;
@@ -598,6 +675,10 @@ footer {
       font-size: 16px;
       height: 48px;
       line-height: 48px;
+      @media (max-width: 768px) {
+        line-height: 24px;
+        height: 24px;
+      }
     }
     li + li {
       margin-left: 48px;
@@ -606,6 +687,15 @@ footer {
   .social-link {
     li {
       cursor: pointer;
+      @media (max-width: 768px) {
+        & {
+          height: 24px !important;
+        }
+        & img {
+          width: 24px;
+          height: 24px;
+        }
+      }
     }
     li + li {
       margin-left: 32px;
@@ -621,18 +711,32 @@ footer {
       font-size: 36px;
       line-height: 54px;
       margin-bottom: 16px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
       img {
         display: inline-block;
+        vertical-align: middle;
       }
       .img_0 {
         width: 36px;
         height: 36px;
         margin-right: 23px;
+        @media (max-width: 768px) {
+          width: 23px;
+          height: 23px;
+        }
       }
       .img_1 {
         width: 48px;
         height: 48px;
         margin-right: 12px;
+        @media (max-width: 768px) {
+          width: 32px;
+          height: 32px;
+          line-height: 30px;
+        }
       }
     }
   }
@@ -640,10 +744,19 @@ footer {
     li {
       display: flex;
       align-items: center;
+
       span {
         margin-left: 38px;
         font-size: 16px;
         line-height: 24px;
+        @media (max-width: 768px) {
+          margin-left: 0px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      img {
+        display: none;
       }
     }
   }
@@ -655,6 +768,9 @@ footer {
     }
     li + li {
       margin-left: 62px;
+      @media (max-width:768px) {
+        margin-left: 26px;
+      }
     }
   }
   // utility
@@ -663,5 +779,8 @@ footer {
   }
   .mb-32 {
     margin-bottom: 32px;
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 }
