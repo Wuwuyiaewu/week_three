@@ -560,6 +560,9 @@ li {
       font-size: 32px;
       line-height: 43px;
     }
+    @media (max-width: 576px) {
+      max-width: 352px;
+    }
     &::before {
       position: absolute;
       top: 0;
@@ -578,6 +581,10 @@ li {
   .pic-2 {
     background-image: url("../images/39.png");
     margin-left: 30px;
+    @media (max-width: 576px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
   ul {
     li {
@@ -599,6 +606,12 @@ li {
         }
         &:nth-child(odd) {
           margin-right: 24px;
+        }
+      }
+      @media (max-width: 576px) {
+        flex-basis: 100%;
+        &:nth-child(odd) {
+          margin-right: 0;
         }
       }
     }
@@ -652,6 +665,21 @@ li {
     }
   }
   //   utility
+  .bg-white {
+    position: relative;
+    z-index: 10;
+    &::before {
+      position: absolute;
+      z-index: -10;
+      content: "";
+      top: 0;
+      left: 0;
+      margin: 250px -50px 0 -50px;
+      width: calc(100% + 100px);
+      height: 100%;
+      background: #fff;
+    }
+  }
   .psr {
     position: relative;
   }
@@ -687,6 +715,16 @@ li {
   .mt-32-md {
     @media (max-width: 768px) {
       margin-top: 32px;
+    }
+  }
+  .mt-24-sm {
+    @media (max-width: 576px) {
+      margin-top: 24px;
+    }
+  }
+  .mt-16-sm {
+    @media (max-width: 576px) {
+      margin-top: 16px;
     }
   }
   .n-pad-md {
@@ -750,11 +788,19 @@ li {
 .section-5 {
   padding-bottom: 92px;
   background: #aa06010d;
+  position: relative;
+  z-index: 20;
+  @media (max-width: 576px) {
+    padding-bottom: 48px;
+  }
   .container {
     max-width: 792px;
     margin: 0 auto;
     @media (max-width: 768px) {
       max-width: 498px;
+    }
+    @media (max-width: 576px) {
+      max-width: 327px;
     }
   }
   .title {
@@ -766,6 +812,9 @@ li {
     font-size: 20px;
     line-height: 1.5;
     font-family: "PingFang TC";
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
   }
   input {
     width: 100%;
@@ -791,6 +840,12 @@ li {
     line-height: 24px;
     font-weight: bold;
     border: none;
+    @media (max-width: 576px) {
+      margin-top: 20px !important;
+      width: 136px;
+      height: 36px;
+      line-height: 6px;
+    }
   }
   .label_wrap {
     display: inline-block;
@@ -805,6 +860,9 @@ li {
       @media (max-width: 768px) {
         font-size: 16px;
       }
+      @media (max-width: 576px) {
+        font-size: 14px;
+      }
     }
   }
   .checkbox,
@@ -816,7 +874,7 @@ li {
     background-color: inherit;
     margin-right: 4px;
     width: 20px;
-    height: 20px;
+    height: 17px;
     border: 2px solid #000;
     user-select: none; /* 防止文字被滑鼠選取反白 */
   }
@@ -829,7 +887,7 @@ li {
     background-color: inherit;
     text-align: center;
     width: 20px;
-    height: 20px;
+    height: 17px;
     margin-right: 4px;
     border: 2px solid #000;
     user-select: none;
@@ -848,6 +906,9 @@ li {
   label {
     display: inline-block;
     margin-bottom: 4px;
+    @media (max-width: 576px) {
+      font-size: 14px;
+    }
   }
   // utility
   .mb-20 {
@@ -876,6 +937,15 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 576px) {
+      max-width: 351px;
+      margin: 0 auto;
+    }
+    &:nth-child(1) {
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
   }
   ul {
     display: flex;
@@ -949,6 +1019,15 @@ footer {
           width: 32px;
           height: 32px;
           line-height: 30px;
+        }
+      }
+      @media (max-width: 576px) {
+        &:nth-child(1){
+          display: flex;
+          justify-content: space-between;
+          .m-social-link{
+            
+          }
         }
       }
     }
